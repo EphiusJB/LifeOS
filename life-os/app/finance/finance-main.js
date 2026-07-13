@@ -41,7 +41,7 @@ export default function FinanceMain(){
                         </div>
                         <div className='text-xs w-9/10'>
                             <h3>Type</h3>
-                            <div>X</div>
+                            <button>Expense</button>
                         </div>
                         <div className='text-xs w-9/10'>
                             <h3>Amount ($)</h3>
