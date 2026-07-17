@@ -1,4 +1,7 @@
 import Navbar from "@/components/navbar";
+import { BookOpen } from 'lucide-react';
+import { Zap, TrendingUp, Flame, MoveRight } from 'lucide-react';
+import GoalsMain from "./goals-main";
 
 export const metadata = {
     title: "Goals"
@@ -6,12 +9,9 @@ export const metadata = {
 
 export default function Goals(){
     return(
-        <div>
+        <div className="flex h-screen">
             <Navbar/>
-            <section className='mt-6 mb-5 w-9/10 mx-auto'>
-                <div className='text-3xl font-bold mb-2'>Goals</div>
-                <div className='text-sm text-foreground/50'>${0} Goals tracked</div>
-            </section>
+            <GoalsMain />
         </div>
     );
 }
