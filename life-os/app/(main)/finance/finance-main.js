@@ -44,7 +44,7 @@ export default function FinanceMain(){
                             <button>Expense</button>
                         </div>
                         <div className='text-xs w-9/10'>
-                            <h3>Amount ($)</h3>
+                            <h3>Amount (K)</h3>
                             <div>X</div>
                         </div>
                         <div className='text-xs w-9/10'>
@@ -75,7 +75,7 @@ export default function FinanceMain(){
                     <TrendingUp className='h-1/2'/>
                 </div>
                 </div>
-                <div className='flex h-1/4 ms-6 font-bold text-2xl text-ring items-center'>$0.00</div>
+                <div className='flex h-1/4 ms-6 font-bold text-2xl text-ring items-center'>K0.00</div>
                 <div className='text-xs ps-6 text-foreground/50'>0 transactions</div>
                 </article>
                 <article className='border border-border bg-card rounded-lg w-1/3 me-4 h-full'>
@@ -85,14 +85,14 @@ export default function FinanceMain(){
                     <TrendingDown className=' h-1/2'/>
                 </div>
                 </div>
-                <div className='flex h-1/4 ms-6 font-bold text-2xl text-destructive items-center'>$0.00</div>
+                <div className='flex h-1/4 ms-6 font-bold text-2xl text-destructive items-center'>K0.00</div>
                 <div className='text-xs ps-6 text-foreground/50'>0 transactions</div>
                 </article>
                 <article className='border border-border bg-card rounded-lg w-1/3 h-full'>
                 <div className='flex h-1/2 items-center ps-6'>
                 <div className='text-sm text-foreground/50'>Net Balance</div>
                 </div>
-                <div className='flex h-1/4 ms-6 font-bold text-2xl text-ring items-center'>$0.00</div>
+                <div className='flex h-1/4 ms-6 font-bold text-2xl text-ring items-center'>K0.00</div>
                 <div className='text-xs ps-6 text-foreground/50'>Surplus</div>
                 </article>
             </section>
