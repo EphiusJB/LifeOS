@@ -29,39 +29,43 @@ export default function FinanceMain(){
                     >
                     <form 
                         onClick={(e) => e.stopPropagation()}
-                        className='flex flex-col bg-black w-1/4 h-1/2 border border-ring rounded justify-center items-center gap-5'
+                        className='flex flex-col bg-black w-1/4 h-2/3 border border-ring rounded justify-center items-center gap-4'
                         >
-                        <div className='flex w-9/10 h-1/11 justify-between'>
-                            <h2 className="flex text-sm font-semibold items-end">Add Expense</h2>
+                        <div className='flex w-full h-1/11 justify-between'>
+                            <h2 className="flex text-sm font-semibold items-end ps-4">Add Expense</h2>
                             <button
-                                className='flex items-start pb-1' 
+                                className='flex items-start pb-1 pe-2 mt-1' 
                                 onClick={() => setIsOpen(false)}>
                                 <X className='size-4'/>
                             </button>
                         </div>
-                        <div className='text-xs w-9/10'>
-                            <h3>Type</h3>
-                            <button>Expense</button>
+                        <div className='flex flex-col gap-1 text-xs h-1/6 w-9/10'>
+                            <label for='finance-type'><h3>Type</h3></label>
+                            <input name='finance-amount' type='text' placeholder='Expense' className='border border-border rounded w-full h-2/3 ps-1'></input>
                         </div>
                         <div className='text-xs w-9/10'>
-                            <h3>Amount (K)</h3>
+                            <h3>Amount ($)</h3>
                             <div>X</div>
                         </div>
-                        <div className='text-xs w-9/10'>
-                            <h3>Category</h3>
-                            <div>X</div>
+                        <div className='flex flex-col gap-1 text-xs h-1/6 w-9/10'>
+                            <label for='finance-category'><h3>Category</h3></label>
+                            <input name='finance-category' type='text' placeholder='Select category' className='border border-border rounded w-full h-2/3 ps-1'></input>
                         </div>
-                        <div className='text-xs w-9/10'>
-                            <h3>Description</h3>
-                            <div>X</div>
+                        <div className='flex flex-col gap-1 text-xs h-1/6 w-9/10'>
+                            <label for='finance-description'><h3>Description</h3></label>
+                            <input name='finance-description' type='text' placeholder='e.g. Monthly salary' className='border border-border rounded w-full h-full ps-1'></input>
                         </div>
-                        <div className='text-xs w-9/10'>
-                            <h3>Date</h3>
-                            <div>X</div>
+                        <div className='flex flex-col gap-1 text-xs h-1/6 w-9/10'>
+                            <label for='finance-date'><h3>Date</h3></label>
+                            <input name='finance-date' type='text' placeholder='June or something' className='border border-border rounded w-full h-2/3 ps-1'></input>
                         </div>
-                        <div className='w-2/3'>
-                            <button>Cancel</button>
-                            <button>Add Transaction</button>
+                        <div className='flex justify-end text-xs gap-3 my-3 pe-4 w-full'>
+                            <button className='border border-border transition-colors hover:border-ring rounded py-1 px-2'>Cancel</button>
+                            <button 
+                                className='flex justify-center items-center text-black font-semibold bg-ring transition-colors hover:bg-ring/90 rounded-sm h-full py-2 px-1 w-1/3'
+                                onClick={() => setIsOpen(true)}>
+                                Add Transaction
+                            </button>
                         </div>
                     </form>
                 </div>
